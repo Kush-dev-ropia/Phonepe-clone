@@ -264,7 +264,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                   "Recharge & Pay Bills",
                                   style: TextStyle(
                                       color: colors().text,
-                                      fontSize: 17,
+                                      fontSize: fontsize().underapp,
                                       fontWeight: FontWeight.bold),
                                 ),
                                 Padding(
@@ -311,7 +311,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -358,7 +358,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -377,7 +377,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -428,7 +428,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -447,7 +447,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -584,7 +584,7 @@ class _FirstScreenState extends State<FirstScreen> {
                               "Sponsored Link",
                               style: TextStyle(
                                   color: colors().text,
-                                  fontSize: 17,
+                                  fontSize: fontsize().underapp,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -735,7 +735,7 @@ class _FirstScreenState extends State<FirstScreen> {
                               "Apps by Phonepay",
                               style: TextStyle(
                                   color: colors().text,
-                                  fontSize: 17,
+                                  fontSize: fontsize().underapp,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -770,7 +770,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -797,7 +797,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -857,7 +857,7 @@ class _FirstScreenState extends State<FirstScreen> {
                               "Insurance",
                               style: TextStyle(
                                   color: colors().text,
-                                  fontSize: 17,
+                                  fontSize: fontsize().underapp,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -885,7 +885,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -904,7 +904,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -923,7 +923,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -975,7 +975,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -994,7 +994,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 17),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1229,7 +1229,7 @@ class _FirstScreenState extends State<FirstScreen> {
                               "Swich",
                               style: TextStyle(
                                   color: colors().text,
-                                  fontSize: 17,
+                                  fontSize: fontsize().underapp,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -1380,7 +1380,7 @@ class _FirstScreenState extends State<FirstScreen> {
                               "Subcriptions and Vouchers",
                               style: TextStyle(
                                   color: colors().text,
-                                  fontSize: 17,
+                                  fontSize: fontsize().underapp,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -1531,7 +1531,7 @@ class _FirstScreenState extends State<FirstScreen> {
                               "Sponsored games",
                               style: TextStyle(
                                   color: colors().text,
-                                  fontSize: 17,
+                                  fontSize: fontsize().underapp,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -1682,7 +1682,7 @@ class _FirstScreenState extends State<FirstScreen> {
                               "Sponsored games",
                               style: TextStyle(
                                   color: colors().text,
-                                  fontSize: 17,
+                                  fontSize: fontsize().underapp,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),

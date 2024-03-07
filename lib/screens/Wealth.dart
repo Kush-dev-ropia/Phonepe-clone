@@ -74,7 +74,7 @@ class _WealthState extends State<Wealth> {
                           decoration: BoxDecoration(
                               color: Colors.purpleAccent,
                               borderRadius: BorderRadius.circular(25)),
-                          height: 50,
+                          height: Get.height * .05,
                           width: Get.width - 50,
                           child: Center(
                               child: Text(
@@ -133,10 +133,10 @@ class _WealthState extends State<Wealth> {
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
-                          "Recharge & Pay Bills",
+                          "Investment Ideas",
                           style: TextStyle(
                               color: colors().text,
-                              fontSize: 17,
+                              fontSize: fontsize().underapp,
                               fontWeight: FontWeight.bold),
                         ),
                       ),
@@ -154,60 +154,17 @@ class _WealthState extends State<Wealth> {
                                 child: Column(
                                   children: [
                                     Icon(
-                                      Icons.smartphone_outlined,
+                                      Icons.local_florist_outlined,
                                       size: 50,
                                       color: colors().iconback,
                                     ),
                                     SizedBox(height: 5),
                                     Text(
-                                      "Mobile Recharge",
+                                      "Best SIP Funds",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 17),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                child: Column(
-                                  children: [
-                                    Stack(
-                                      clipBehavior: Clip.none,
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(22),
-                                              image: DecorationImage(
-                                                  image: AssetImage(
-                                                      "assets/Screenshot 2024-02-28 175554.png"),
-                                                  fit: BoxFit.fill),
-                                              color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
-                                        ),
-                                        Positioned(
-                                          right: -15,
-                                          top: -1,
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                                color: Colors.deepOrange,
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            child: Padding(
-                                              padding: const EdgeInsets.all(3),
-                                              child: Text("Popular"),
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                    SizedBox(height: 5),
-                                    Text(
-                                      "Buy   FASTag",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          color: Colors.white, fontSize: 17),
+                                          color: Colors.white,
+                                          fontSize: fontsize().underapp),
                                     )
                                   ],
                                 ),
@@ -216,16 +173,36 @@ class _WealthState extends State<Wealth> {
                                 child: Column(
                                   children: [
                                     Icon(
-                                      Icons.connected_tv_rounded,
+                                      Icons.call_to_action_outlined,
                                       size: 50,
                                       color: colors().iconback,
                                     ),
                                     SizedBox(height: 5),
                                     Text(
-                                      "DTH",
+                                      "Tax Saving Funds",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 17),
+                                          color: Colors.white,
+                                          fontSize: fontsize().underapp),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Icon(
+                                      Icons.call_split_outlined,
+                                      size: 50,
+                                      color: colors().iconback,
+                                    ),
+                                    SizedBox(height: 5),
+                                    Text(
+                                      "2-in-1 Funds",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: fontsize().underapp),
                                     )
                                   ],
                                 ),
@@ -245,7 +222,8 @@ class _WealthState extends State<Wealth> {
                                       "Electricity",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 18),
+                                          color: Colors.white,
+                                          fontSize: fontsize().underapp),
                                     )
                                   ],
                                 ),
@@ -274,7 +252,8 @@ class _WealthState extends State<Wealth> {
                                       "Rent Payment",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 17),
+                                          color: Colors.white,
+                                          fontSize: fontsize().underapp),
                                     )
                                   ],
                                 ),
@@ -292,7 +271,8 @@ class _WealthState extends State<Wealth> {
                                       "Loan Repayment",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 17),
+                                          color: Colors.white,
+                                          fontSize: fontsize().underapp),
                                     )
                                   ],
                                 ),
@@ -312,7 +292,8 @@ class _WealthState extends State<Wealth> {
                                       "Book A Cylinder",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 18),
+                                          color: Colors.white,
+                                          fontSize: fontsize().underapp),
                                     )
                                   ],
                                 ),
@@ -340,7 +321,8 @@ class _WealthState extends State<Wealth> {
                                       "See All",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 18),
+                                          color: Colors.white,
+                                          fontSize: fontsize().underapp),
                                     )
                                   ],
                                 ),

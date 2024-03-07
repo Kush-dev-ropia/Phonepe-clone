@@ -152,7 +152,7 @@ class _BottomBarState extends State<BottomBar> {
                         color: selectedIndex == 0
                             ? colors().icon
                             : colors().bottomicon,
-                        fontSize: 17,
+                        fontSize: fontsize().underapp,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -190,7 +190,7 @@ class _BottomBarState extends State<BottomBar> {
                         color: selectedIndex == 1
                             ? colors().icon
                             : colors().bottomicon,
-                        fontSize: 17,
+                        fontSize: fontsize().underapp,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -228,7 +228,7 @@ class _BottomBarState extends State<BottomBar> {
                         color: selectedIndex == 2
                             ? colors().icon
                             : colors().bottomicon,
-                        fontSize: 17,
+                        fontSize: fontsize().underapp,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -266,7 +266,7 @@ class _BottomBarState extends State<BottomBar> {
                         color: selectedIndex == 3
                             ? colors().icon
                             : colors().bottomicon,
-                        fontSize: 17,
+                        fontSize: fontsize().underapp,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -304,7 +304,7 @@ class _BottomBarState extends State<BottomBar> {
                         color: selectedIndex == 4
                             ? colors().icon
                             : colors().bottomicon,
-                        fontSize: 17,
+                        fontSize: fontsize().underapp,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

@@ -17,3 +17,7 @@ class padding {
   var contpading = const EdgeInsets.only(left: 8.0, right: 8, top: 8);
   var headingpadd = const EdgeInsets.only(left: 10, top: 10);
 }
+
+class fontsize {
+  var underapp = 14.0;
+}
