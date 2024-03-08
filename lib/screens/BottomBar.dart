@@ -63,7 +63,7 @@ class _BottomBarState extends State<BottomBar> {
             Column(
               children: [
                 Text(
-                  "phonepay",
+                  "GPay",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 Text(
