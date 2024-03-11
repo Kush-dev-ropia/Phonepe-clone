@@ -20,4 +20,5 @@ class padding {
 
 class fontsize {
   var underapp = 14.0;
+  var iconsize = 50.0;
 }

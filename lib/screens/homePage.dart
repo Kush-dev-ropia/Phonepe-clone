@@ -89,8 +89,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(22),
                                             color: Colors.purple),
-                                        height: 60,
-                                        width: 60,
+                                        height: fontsize().iconsize,
+                                        width: fontsize().iconsize,
                                         child: Icon(
                                           Icons.perm_identity,
                                           size: 45,
@@ -98,11 +98,14 @@ class _FirstScreenState extends State<FirstScreen> {
                                         ),
                                       ),
                                       SizedBox(height: 5),
-                                      Text(
-                                        "To Mobile Number",
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            color: colors().text, fontSize: 15),
+                                      Container(
+                                        child: Text(
+                                          "To Mobile Number",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: colors().text,
+                                              fontSize: 15),
+                                        ),
                                       )
                                     ],
                                   ),
@@ -115,8 +118,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(22),
                                             color: Colors.purple),
-                                        height: 60,
-                                        width: 60,
+                                        height: fontsize().iconsize,
+                                        width: fontsize().iconsize,
                                         child: Icon(
                                           Icons.account_balance,
                                           size: 45,
@@ -124,11 +127,14 @@ class _FirstScreenState extends State<FirstScreen> {
                                         ),
                                       ),
                                       SizedBox(height: 5),
-                                      Text(
-                                        "To Bank/ UPI ID",
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            color: colors().text, fontSize: 15),
+                                      Container(
+                                        child: Text(
+                                          "To Bank/ UPI ID",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: colors().text,
+                                              fontSize: 15),
+                                        ),
                                       )
                                     ],
                                   ),
@@ -141,8 +147,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(22),
                                             color: Colors.purple),
-                                        height: 60,
-                                        width: 60,
+                                        height: 55,
+                                        width: fontsize().iconsize,
                                         child: Icon(
                                           Icons.arrow_circle_down,
                                           size: 45,
@@ -150,11 +156,14 @@ class _FirstScreenState extends State<FirstScreen> {
                                         ),
                                       ),
                                       SizedBox(height: 5),
-                                      Text(
-                                        "check Balance",
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            color: Colors.white, fontSize: 15),
+                                      Container(
+                                        child: Text(
+                                          "To Self Account",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 15),
+                                        ),
                                       )
                                     ],
                                   ),
@@ -167,8 +176,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(22),
                                             color: Colors.purple),
-                                        height: 60,
-                                        width: 60,
+                                        height: fontsize().iconsize,
+                                        width: fontsize().iconsize,
                                         child: Icon(
                                           Icons.account_balance_outlined,
                                           size: 45,
@@ -178,11 +187,14 @@ class _FirstScreenState extends State<FirstScreen> {
                                       SizedBox(
                                         height: 5,
                                       ),
-                                      Text(
-                                        "check Balance",
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            color: Colors.white, fontSize: 15),
+                                      Container(
+                                        child: Text(
+                                          "check bank Balance",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 15),
+                                        ),
                                       )
                                     ],
                                   ),
@@ -331,8 +343,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                           "assets/Screenshot 2024-02-28 175554.png"),
                                                       fit: BoxFit.fill),
                                                   color: Colors.purple),
-                                              height: 55,
-                                              width: 55,
+                                              height: fontsize().iconsize,
+                                              width: fontsize().iconsize,
                                             ),
                                             Positioned(
                                               right: -15,
@@ -398,7 +410,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -468,7 +480,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -481,8 +493,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                           child: Icon(
                                             Icons.arrow_forward_ios_sharp,
                                             size: 30,
@@ -497,7 +509,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -610,8 +622,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -637,8 +649,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -664,8 +676,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(
                                           height: 5,
@@ -693,8 +705,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(
                                           height: 5,
@@ -761,8 +773,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -788,8 +800,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -815,8 +827,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(
                                           height: 5,
@@ -826,7 +838,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -945,7 +957,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -970,12 +982,15 @@ class _FirstScreenState extends State<FirstScreen> {
                                           color: colors().iconback,
                                         ),
                                         SizedBox(height: 5),
-                                        Text(
-                                          "term          life",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: fontsize().underapp),
+                                        Container(
+                                          width: 40,
+                                          child: Text(
+                                            "term life",
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: fontsize().underapp),
+                                          ),
                                         )
                                       ],
                                     ),
@@ -1015,7 +1030,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1028,8 +1043,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                           child: Icon(
                                             Icons.arrow_forward_ios_sharp,
                                             size: 30,
@@ -1044,7 +1059,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1104,8 +1119,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                             width: 1, color: Colors.blueGrey),
                                         borderRadius: BorderRadius.circular(22),
                                       ),
-                                      height: 60,
-                                      width: 60,
+                                      height: fontsize().iconsize,
+                                      width: fontsize().iconsize,
                                       child: Icon(
                                         Icons.flight,
                                         size: 45,
@@ -1131,8 +1146,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                             width: 1, color: Colors.blueGrey),
                                         borderRadius: BorderRadius.circular(22),
                                       ),
-                                      height: 60,
-                                      width: 60,
+                                      height: fontsize().iconsize,
+                                      width: fontsize().iconsize,
                                       child: Icon(
                                         Icons.directions_bus,
                                         size: 45,
@@ -1158,8 +1173,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                             width: 1, color: Colors.blueGrey),
                                         borderRadius: BorderRadius.circular(22),
                                       ),
-                                      height: 60,
-                                      width: 60,
+                                      height: fontsize().iconsize,
+                                      width: fontsize().iconsize,
                                       child: Icon(
                                         Icons.train,
                                         size: 45,
@@ -1185,8 +1200,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                             width: 1, color: Colors.blueGrey),
                                         borderRadius: BorderRadius.circular(22),
                                       ),
-                                      height: 60,
-                                      width: 60,
+                                      height: fontsize().iconsize,
+                                      width: fontsize().iconsize,
                                       child: Icon(
                                         Icons.location_city,
                                         size: 45,
@@ -1255,8 +1270,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -1264,7 +1279,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1282,8 +1297,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -1291,7 +1306,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1309,8 +1324,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(
                                           height: 5,
@@ -1320,7 +1335,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1333,8 +1348,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                           child: Icon(
                                             Icons.arrow_forward_ios_sharp,
                                             size: 30,
@@ -1349,7 +1364,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1406,8 +1421,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -1415,7 +1430,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1433,8 +1448,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -1442,7 +1457,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1460,8 +1475,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(
                                           height: 5,
@@ -1471,7 +1486,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1484,8 +1499,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                           child: Icon(
                                             Icons.arrow_forward_ios_sharp,
                                             size: 30,
@@ -1500,7 +1515,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1557,8 +1572,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(22),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -1566,7 +1581,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1584,8 +1599,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(height: 5),
                                         Text(
@@ -1593,7 +1608,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1611,8 +1626,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(
                                           height: 5,
@@ -1622,7 +1637,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1640,8 +1655,8 @@ class _FirstScreenState extends State<FirstScreen> {
                                                   ),
                                                   fit: BoxFit.fill),
                                               color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
                                         ),
                                         SizedBox(
                                           height: 5,
@@ -1651,7 +1666,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 14),
+                                              fontSize: fontsize().underapp),
                                         )
                                       ],
                                     ),
@@ -1663,158 +1678,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         ],
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: padding().contpading,
-                    child: Container(
-                      height: 135,
-                      width: Get.width,
-                      decoration: BoxDecoration(
-                        color: colors().back,
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(5),
-                            child: Text(
-                              "Sponsored games",
-                              style: TextStyle(
-                                  color: colors().text,
-                                  fontSize: fontsize().underapp,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(5),
-                            child: Container(
-                              height: 90,
-                              width: Get.width,
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                  image: NetworkImage(
-                                                      "https://www.mpl.live/static/MPL_Logo_2.png"),
-                                                  fit: BoxFit.fill),
-                                              borderRadius:
-                                                  BorderRadius.circular(22),
-                                              color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
-                                        ),
-                                        SizedBox(height: 5),
-                                        Text(
-                                          "A32 Rummy",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 14),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(22),
-                                              image: DecorationImage(
-                                                  image: NetworkImage(
-                                                    "https://play-lh.googleusercontent.com/BL_C9-e7smnKI-iqHe861z_JcbA0S2Naoh4YlWqAoT8MHSP7LCG0W72Bgo0Z4xrPjXyK",
-                                                  ),
-                                                  fit: BoxFit.fill),
-                                              color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
-                                        ),
-                                        SizedBox(height: 5),
-                                        Text(
-                                          "Jungle poker",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 14),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(22),
-                                              image: DecorationImage(
-                                                  image: NetworkImage(
-                                                    "https://play-lh.googleusercontent.com/0qDrwb1k7VftSiOZZGx4C0KHXUIuxbp-BmNpw9CcgJhTce1ghrvDDzhJlJIw4uzOny4",
-                                                  ),
-                                                  fit: BoxFit.fill),
-                                              color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
-                                        ),
-                                        SizedBox(
-                                          height: 5,
-                                        ),
-                                        Text(
-                                          "WinZo Ludo",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 14),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(22),
-                                              image: DecorationImage(
-                                                  image: NetworkImage(
-                                                    "https://play-lh.googleusercontent.com/oRNHgMbRNbSp9WFkxvjXX_ks2VrkpHFBj8WPKSciqMtuXnuUYpSYg1PwcZLWqsgL9BLM",
-                                                  ),
-                                                  fit: BoxFit.fill),
-                                              color: Colors.purple),
-                                          height: 55,
-                                          width: 55,
-                                        ),
-                                        SizedBox(
-                                          height: 5,
-                                        ),
-                                        Text(
-                                          "Rush Lyudo",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 14),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  )
+                  ), //Sponcerd links
                 ],
               ),
               decoration: BoxDecoration(

@@ -37,8 +37,9 @@ class _CreditScreenState extends State<CreditScreen> {
                           ),
                           Text(
                             "Check Your",
-                            style:
-                                TextStyle(color: colors().text, fontSize: 16),
+                            style: TextStyle(
+                                color: colors().text,
+                                fontSize: fontsize().underapp),
                           ),
                           SizedBox(
                             height: 10,
@@ -56,11 +57,23 @@ class _CreditScreenState extends State<CreditScreen> {
                               Expanded(
                                 child: Container(
                                   width: Get.width * .3,
-                                  child: Text(
-                                    "Detailed     Insights",
-                                    style: TextStyle(
-                                        color: colors().text, fontSize: 16),
-                                    textAlign: TextAlign.center,
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        "Detailed",
+                                        style: TextStyle(
+                                            color: colors().text,
+                                            fontSize: fontsize().underapp),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      Text(
+                                        "Insights",
+                                        style: TextStyle(
+                                            color: colors().text,
+                                            fontSize: fontsize().underapp),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -72,11 +85,19 @@ class _CreditScreenState extends State<CreditScreen> {
                               Expanded(
                                 child: Container(
                                   width: Get.width * .3,
-                                  child: Text(
-                                    "Customised      Loans",
-                                    style: TextStyle(
-                                        color: colors().text, fontSize: 16),
-                                    textAlign: TextAlign.center,
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        width: 75,
+                                        child: Text(
+                                          "Customised Loans",
+                                          style: TextStyle(
+                                              color: colors().text,
+                                              fontSize: fontsize().underapp),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -87,12 +108,19 @@ class _CreditScreenState extends State<CreditScreen> {
                               ),
                               Expanded(
                                 child: Container(
-                                  width: Get.width * .3,
-                                  child: Text(
-                                    "100%              secure",
-                                    style: TextStyle(
-                                        color: colors().text, fontSize: 16),
-                                    textAlign: TextAlign.center,
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        width: 45,
+                                        child: Text(
+                                          "100% secure",
+                                          style: TextStyle(
+                                              color: colors().text,
+                                              fontSize: fontsize().underapp),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -106,12 +134,12 @@ class _CreditScreenState extends State<CreditScreen> {
                                   color: Colors.purpleAccent,
                                   borderRadius: BorderRadius.circular(20)),
                               height: 40,
-                              width: 305,
+                              width: Get.width - 50,
                               child: Center(
                                   child: Text(
                                 "Check Now",
                                 style: TextStyle(
-                                    fontSize: 16,
+                                    fontSize: fontsize().underapp,
                                     fontWeight: FontWeight.bold,
                                     color: colors().text),
                               ))),
@@ -172,7 +200,8 @@ class _CreditScreenState extends State<CreditScreen> {
                                         "Rupay Credit on UPI",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                            color: colors().text, fontSize: 16),
+                                            color: colors().text,
+                                            fontSize: fontsize().underapp),
                                       ),
                                     ),
                                   ),
@@ -209,7 +238,8 @@ class _CreditScreenState extends State<CreditScreen> {
                                         "Credit Card",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                            color: colors().text, fontSize: 16),
+                                            color: colors().text,
+                                            fontSize: fontsize().underapp),
                                       ),
                                     ),
                                   ),
@@ -270,7 +300,8 @@ class _CreditScreenState extends State<CreditScreen> {
                                         "Credit Score",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                            color: colors().text, fontSize: 16),
+                                            color: colors().text,
+                                            fontSize: fontsize().underapp),
                                       ),
                                     ),
                                   ),
@@ -307,7 +338,8 @@ class _CreditScreenState extends State<CreditScreen> {
                                         "Account Aggregator",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                            color: colors().text, fontSize: 16),
+                                            color: colors().text,
+                                            fontSize: fontsize().underapp),
                                       ),
                                     ),
                                   ),
@@ -368,7 +400,8 @@ class _CreditScreenState extends State<CreditScreen> {
                                         "Credit Card Bill Payments",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                            color: colors().text, fontSize: 16),
+                                            color: colors().text,
+                                            fontSize: fontsize().underapp),
                                       ),
                                     ),
                                   ),
@@ -405,7 +438,8 @@ class _CreditScreenState extends State<CreditScreen> {
                                         "Loan Repayment",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                            color: colors().text, fontSize: 16),
+                                            color: colors().text,
+                                            fontSize: fontsize().underapp),
                                       ),
                                     ),
                                   ),

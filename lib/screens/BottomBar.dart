@@ -3,6 +3,7 @@ import 'package:phonepaychlone/Constent/constent.dart';
 import 'package:phonepaychlone/screens/CreditScreen.dart';
 import 'package:phonepaychlone/screens/Insurance.dart';
 import 'package:phonepaychlone/screens/Wealth.dart';
+import 'package:phonepaychlone/screens/history.dart';
 import 'package:phonepaychlone/screens/homePage.dart';
 
 class BottomBar extends StatefulWidget {
@@ -19,6 +20,7 @@ class _BottomBarState extends State<BottomBar> {
     CreditScreen(),
     Unsurance(),
     Wealth(),
+    History(),
   ];
 
   @override
@@ -63,7 +65,7 @@ class _BottomBarState extends State<BottomBar> {
             Column(
               children: [
                 Text(
-                  "GPay",
+                  "PhonePe",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 Text(
@@ -292,7 +294,7 @@ class _BottomBarState extends State<BottomBar> {
                       width: 35,
                       child: Icon(
                         Icons.compare_arrows_outlined,
-                        color: selectedIndex == 0
+                        color: selectedIndex == 4
                             ? colors().bottomndapp
                             : colors().bottomicon,
                         size: 25,
