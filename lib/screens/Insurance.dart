@@ -15,7 +15,7 @@ class _UnsuranceState extends State<Unsurance> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: colors().body,
       body: SingleChildScrollView(
         child: Column(
           children: [

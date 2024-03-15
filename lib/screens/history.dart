@@ -13,7 +13,7 @@ class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: colors().body,
       body: Column(
         children: [
           Padding(

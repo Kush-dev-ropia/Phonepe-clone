@@ -5,11 +5,11 @@ class colors {
   var iconbackground = Colors.purple;
   var icon = Colors.white;
   var iconback = Colors.purple;
-  var ui = Colors.purple;
-  var back = Color(0x99271933);
-  var bottomndapp = Color(0xff471562);
+  var back = Color(0xff23182c);
+  var bottomndapp = Color(0xff3c1554);
+  var body = Color(0xff0b0817);
   var bottomicnbck = Color(0xff62188c);
-  var backbody = Color(0xff1d101f);
+  var backbody = Color(0xff211223);
   var bottomicon = Color(0xff726c6c);
 }
 

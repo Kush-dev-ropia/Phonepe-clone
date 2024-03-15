@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'screens/BottomBar.dart';
+import 'package:phonepaychlone/screens/BottomBar.dart';
 
 void main() {
   runApp(const MyApp());

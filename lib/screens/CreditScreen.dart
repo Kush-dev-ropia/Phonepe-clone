@@ -14,7 +14,7 @@ class _CreditScreenState extends State<CreditScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: colors().body,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -26,7 +26,7 @@ class _CreditScreenState extends State<CreditScreen> {
                       height: Get.height * .5,
                       width: Get.width,
                       decoration: BoxDecoration(
-                        color: colors().backbody,
+                        color: colors().back,
                         borderRadius: BorderRadius.circular(15),
                       ),
                       child: Column(

@@ -38,8 +38,10 @@ dependencies:
   pinput: ^1.1.0
   loading_animation_widget: ^1.2.0+4
   lottie: ^1.4.2
-  carousel_pro_nullsafety: ^1.0.2
-  flutter_launcher_icons: ^0.11.0
+  carousel_pro: ^1.0.0
+  chewie: ^0.10.0
+  image_picker: ^0.8.6
+
 
 
 
@@ -54,10 +56,6 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
 
-flutter_icons:
-  image_path: "ass ets/icon.png"
-  android: true
-  ios: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -14,7 +14,7 @@ class _WealthState extends State<Wealth> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: colors().body,
         body: SingleChildScrollView(
           child: Column(
             children: [
