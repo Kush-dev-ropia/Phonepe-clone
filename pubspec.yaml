@@ -41,6 +41,14 @@ dependencies:
   carousel_pro: ^1.0.0
   chewie: ^0.10.0
   image_picker: ^0.8.6
+  image_cropper: ^3.0.3
+  url_launcher: ^6.1.8
+  firebase_core: ^1.24.0
+  firebase_core_platform_interface: 4.5.1
+  firebase_auth: ^3.4.2
+  qr_code_scanner: ^0.7.0
+  permission_handler: ^11.0.1
+
 
 
 

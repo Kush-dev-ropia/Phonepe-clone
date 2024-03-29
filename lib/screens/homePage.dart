@@ -3,6 +3,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:phonepaychlone/Constent/constent.dart';
+import 'package:phonepaychlone/screens/QRcode.dart';
+import 'package:phonepaychlone/screens/imagecropper.dart';
+import 'package:phonepaychlone/screens/maps.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import 'screenthree.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({Key? key});
@@ -42,24 +48,45 @@ class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colors().body,
+      // backgroundColor: colors().body,
       body: Stack(
         children: [
           SingleChildScrollView(
-            reverse: true,
             child: Column(
               children: [
+                //corusel
                 Padding(
                   padding: padding().contpading,
                   child: Container(
+                    height: 160,
+                    width: Get.width,
+                    decoration: BoxDecoration(
+                      color: colors().back,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
                     child: Carousel(
                       images: [
-                        Image.network(
-                            "https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Image1afj-1686757678106.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces"),
-                        Image.network(
-                            "https://entrackr.com/storage/2020/12/Flipkart-phonepe-1.jpg"),
-                        Image.network(
-                            "https://www.bookofficenow.com/blogs/wp-content/uploads/2023/11/Phone-pe-Blog.png"),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.network(
+                            "https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Image1afj-1686757678106.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces",
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.network(
+                            "https://entrackr.com/storage/2020/12/Flipkart-phonepe-1.jpg",
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.network(
+                            "https://www.bookofficenow.com/blogs/wp-content/uploads/2023/11/Phone-pe-Blog.png",
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
                       ],
                       dotSize: 4.0,
                       dotSpacing: 15.0,
@@ -68,14 +95,9 @@ class _FirstScreenState extends State<FirstScreen> {
                       dotBgColor: Colors.transparent,
                       borderRadius: true,
                     ),
-                    height: 160,
-                    width: Get.width,
-                    decoration: BoxDecoration(
-                      color: colors().back,
-                      borderRadius: BorderRadius.circular(15),
-                    ),
                   ),
-                ), //corusel
+                ),
+                //Transfer money
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -90,13 +112,13 @@ class _FirstScreenState extends State<FirstScreen> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(5),
-                          child: Text(
-                            "Transfer Money",
-                            style: TextStyle(
-                                color: colors().text,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold),
-                          ),
+                          child: Text("Transfer Money",
+                              style: TextTheme().bodyText1
+                              // TextStyle(
+                              //     color: colors().text,
+                              //     fontSize: 18,
+                              //     fontWeight: FontWeight.bold),
+                              ),
                         ),
                         SizedBox(
                           height: 5,
@@ -226,7 +248,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //Transfer money
+                ),
+                //phonepe wallet
                 Row(
                   children: [
                     Expanded(
@@ -275,7 +298,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       ),
                     ),
                   ],
-                ), //phonepe wallet
+                ),
+                //recharge & bills
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -540,7 +564,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //recharge & bills
+                ),
+                //pin less payments
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -595,7 +620,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //pin less payments
+                ),
+                //sponsored links
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -631,17 +657,26 @@ class _FirstScreenState extends State<FirstScreen> {
                                 Expanded(
                                   child: Column(
                                     children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://www.mpl.live/static/MPL_Logo_2.png"),
-                                                fit: BoxFit.fill),
-                                            borderRadius:
-                                                BorderRadius.circular(22),
-                                            color: Colors.purple),
-                                        height: fontsize().iconsize,
-                                        width: fontsize().iconsize,
+                                      InkWell(
+                                        onTap: () async {
+                                          /**/
+                                          const url =
+                                              'https://rushbyhike.app.link/phonepe_jan24_icon?%243p=a_phonepe&%24aaid=06d593b7-bf51-4b7c-90e1-dcbdd6bb0afd&%24idfa=06d593b7-bf51-4b7c-90e1-dcbdd6bb0afd&~campaign=Rush_Icon_jan1&~campaign_id=BC2402261246026663969156&~click_id=CK2403191752456070668249&~secondary_publisher=phonepe_jan24_icon';
+
+                                          await launch(url);
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      "https://www.mpl.live/static/MPL_Logo_2.png"),
+                                                  fit: BoxFit.fill),
+                                              borderRadius:
+                                                  BorderRadius.circular(22),
+                                              color: Colors.purple),
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
+                                        ),
                                       ),
                                       SizedBox(height: 5),
                                       Text(
@@ -656,18 +691,26 @@ class _FirstScreenState extends State<FirstScreen> {
                                 Expanded(
                                   child: Column(
                                     children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(22),
-                                            image: DecorationImage(
-                                                image: NetworkImage(
-                                                  "https://play-lh.googleusercontent.com/BL_C9-e7smnKI-iqHe861z_JcbA0S2Naoh4YlWqAoT8MHSP7LCG0W72Bgo0Z4xrPjXyK",
-                                                ),
-                                                fit: BoxFit.fill),
-                                            color: Colors.purple),
-                                        height: fontsize().iconsize,
-                                        width: fontsize().iconsize,
+                                      InkWell(
+                                        onTap: () async {
+                                          const url =
+                                              'https://www.rummycircle.com/play-online-rummy-fs-5000.html?af_pmod_lookback_window=7d&af_c_id=BC2402281658203701256976&af_pmod_priority=equal&pid=phonepe_int&af_click_lookback=7d&utm_content=Kbjrcp_HR2kWelcomeBonusEng&utm_source=blinkdigital_phonepe&af_redirect=true&utm_medium=homepageicon_coinsbl&af_adset=homepageicon_coinsbl&af_ad=Kbjrcp_HR2kWelcomeBonusEng&utm_campaign=app_panindia&deep_link_value=https%3A%2F%2Fwww.rummycircle.com%2FaddCash&af_channel=blinkdigital_phonepe&clickid=CK2403201815280771872578&utm_placement=hr-5k-welcome-bonus-new-5000RCPP-phonepe-jan-eng-2312024&af_siteid=PUB22024&af_ref=Phonepe_CK2403201815280771872578&af_sub_siteid=ADU2209051225197071409807&advertising_id=06d593b7-bf51-4b7c-90e1-dcbdd6bb0afd&utm_term=CK2403201815280771872578&af_ad_id=BAD2402291310592351223743&c=app_panindia&referrer=Phonepe_CK2403201815280771872578';
+
+                                          await launch(url);
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(22),
+                                              image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    "https://play-lh.googleusercontent.com/BL_C9-e7smnKI-iqHe861z_JcbA0S2Naoh4YlWqAoT8MHSP7LCG0W72Bgo0Z4xrPjXyK",
+                                                  ),
+                                                  fit: BoxFit.fill),
+                                              color: Colors.purple),
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
+                                        ),
                                       ),
                                       SizedBox(height: 5),
                                       Text(
@@ -742,7 +785,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //sponsored links
+                ),
+                //apps by phonepe
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -864,7 +908,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //apps by phonepe
+                ),
+                //insurance
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -1084,18 +1129,34 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //insurance
+                ),
+                //corousal 2
                 Padding(
                   padding: padding().contpading,
                   child: Container(
                     child: Carousel(
                       images: [
-                        Image.network(
-                            "https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Image1afj-1686757678106.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces"),
-                        Image.network(
-                            "https://entrackr.com/storage/2020/12/Flipkart-phonepe-1.jpg"),
-                        Image.network(
-                            "https://www.bookofficenow.com/blogs/wp-content/uploads/2023/11/Phone-pe-Blog.png"),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.network(
+                            "https://images.yourstory.com/cs/2/a09f22505c6411ea9c48a10bad99c62f/Image1afj-1686757678106.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces",
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.network(
+                            "https://entrackr.com/storage/2020/12/Flipkart-phonepe-1.jpg",
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.network(
+                            "https://www.bookofficenow.com/blogs/wp-content/uploads/2023/11/Phone-pe-Blog.png",
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
                       ],
                       dotSize: 8.0,
                       dotSpacing: 25.0,
@@ -1111,7 +1172,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       borderRadius: BorderRadius.circular(15),
                     ),
                   ),
-                ), //corousal 2
+                ),
+                // trsvel booking
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -1254,7 +1316,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), // trsvel booking
+                ),
+                //switch
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -1372,17 +1435,26 @@ class _FirstScreenState extends State<FirstScreen> {
                                 Expanded(
                                   child: Column(
                                     children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(22),
-                                            color: Colors.purple),
-                                        height: fontsize().iconsize,
-                                        width: fontsize().iconsize,
-                                        child: Icon(
-                                          Icons.arrow_forward_ios_sharp,
-                                          size: 30,
-                                          color: colors().text,
+                                      InkWell(
+                                        onTap: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      Maps()));
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(22),
+                                              color: Colors.purple),
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
+                                          child: Icon(
+                                            Icons.arrow_forward_ios_sharp,
+                                            size: 30,
+                                            color: colors().text,
+                                          ),
                                         ),
                                       ),
                                       SizedBox(
@@ -1405,7 +1477,8 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //switch
+                ),
+                //Subscriptions nd vouchers
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -1556,7 +1629,7 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //Subscriptions nd vouchers
+                ),
                 Padding(
                   padding: padding().contpading,
                   child: Container(
@@ -1596,7 +1669,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                         decoration: BoxDecoration(
                                             image: DecorationImage(
                                                 image: NetworkImage(
-                                                    "https://www.mpl.live/static/MPL_Logo_2.png"),
+                                                    "https://play-lh.googleusercontent.com/YBKk5BFYKo63d3qcNp5qKr7eOtfKcPd2hA85UVvJqs_GrxRbgUhWf80MLXFeh97_-KhM=w240-h480-rw"),
                                                 fit: BoxFit.fill),
                                             borderRadius:
                                                 BorderRadius.circular(22),
@@ -1624,7 +1697,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                                 BorderRadius.circular(22),
                                             image: DecorationImage(
                                                 image: NetworkImage(
-                                                  "https://play-lh.googleusercontent.com/BL_C9-e7smnKI-iqHe861z_JcbA0S2Naoh4YlWqAoT8MHSP7LCG0W72Bgo0Z4xrPjXyK",
+                                                  "https://cdn6.aptoide.com/imgs/c/3/6/c362e528be99f65be8fb7e59abcdf3e7_icon.png",
                                                 ),
                                                 fit: BoxFit.fill),
                                             color: Colors.purple),
@@ -1645,18 +1718,25 @@ class _FirstScreenState extends State<FirstScreen> {
                                 Expanded(
                                   child: Column(
                                     children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(22),
-                                            image: DecorationImage(
-                                                image: NetworkImage(
-                                                  "https://play-lh.googleusercontent.com/0qDrwb1k7VftSiOZZGx4C0KHXUIuxbp-BmNpw9CcgJhTce1ghrvDDzhJlJIw4uzOny4",
-                                                ),
-                                                fit: BoxFit.fill),
-                                            color: Colors.purple),
-                                        height: fontsize().iconsize,
-                                        width: fontsize().iconsize,
+                                      InkWell(
+                                        onTap: () async {
+                                          /**/
+                                          const url =
+                                              'https://www.winzogames.com/ps?af_c_id=BC2402271223049788468809&pid=phonepe_int&is_retargeting=true&af_click_lookback=7d&utm_source=phonepe_int&utm_medium=paid&af_ad=OF-26203_Winzo_GamingStripIcon_CPC12.8&clickid=CK2403202320412158710968&af_reengagement_window=7d&af_siteid=PUB22024&af_ref=Phonepe_CK2403202320412158710968&af_sub_siteid=ADU2209141633472225663960&advertising_id=06d593b7-bf51-4b7c-90e1-dcbdd6bb0afd&af_ad_id=BAD2402271225207262517249&c=ICON_PS&referrer=Phonepe_CK2403202320412158710968';
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(22),
+                                              image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    "https://play-lh.googleusercontent.com/UXmfcT-3t6LZDlsmegvXq3lXBVz53KNwzZWS3Qd8cdSVgM-I3EsT2Y0_X8g0-OCxBrU",
+                                                  ),
+                                                  fit: BoxFit.fill),
+                                              color: Colors.purple),
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
+                                        ),
                                       ),
                                       SizedBox(
                                         height: 5,
@@ -1674,24 +1754,33 @@ class _FirstScreenState extends State<FirstScreen> {
                                 Expanded(
                                   child: Column(
                                     children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(22),
-                                            image: DecorationImage(
-                                                image: NetworkImage(
-                                                  "https://play-lh.googleusercontent.com/oRNHgMbRNbSp9WFkxvjXX_ks2VrkpHFBj8WPKSciqMtuXnuUYpSYg1PwcZLWqsgL9BLM",
-                                                ),
-                                                fit: BoxFit.fill),
-                                            color: Colors.purple),
-                                        height: fontsize().iconsize,
-                                        width: fontsize().iconsize,
+                                      InkWell(
+                                        onTap: () async {
+                                          /**/
+                                          const url =
+                                              'https://www.getrushapp.com/phonepe_mb_jan24_coupon_campaign?utm_source=PhonePe&utm_campaign=Feb%2024%20Bottom%20Strip%20Icon&utm_medium=paid%20advertising&%243p=a_phonepe&%24aaid=06d593b7-bf51-4b7c-90e1-dcbdd6bb0afd&%24idfa=06d593b7-bf51-4b7c-90e1-dcbdd6bb0afd&~campaign=Rush_BottomIcon_jan1&~campaign_id=BC2402261257422775501422&~click_id=CK2403201817030219594010&~secondary_publisher=phonepe_feb2024_bottom_icon&_branch_match_id=1281312355212813201&_branch_referrer=H4sIAAAAAAAAA43QwWrDMAyA4afZbmlkxY6XQRi09FB22wsYyXZmL6ljkvTQt59Tdthp7CbBh%2FhR2La8vtb1clsD30Mc%2FYFyPkwxjXUOc%2FLZm8EzAkrD87bNVxPtnN6eUDa5J%2FNjnstOFF0PrVNdw7riQYlKsrZVB15UzrJzLTPQ4HYc3UD%2FxPps6Zopfqb%2Bo1Sa4yPjUirMFyXxG5hScDyhBMRWoNISUWulQJTh4aZoxx2d3gtqEMSL0NAAik51EgTsaPXltKPlbvKNp7gGv%2FR%2FvOIbV6GVpEIBAAA%3D';
+
+                                          await launch(url);
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(22),
+                                              image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    "https://media.giphy.com/avatars/rushapp/kRgqUnADGleR.png",
+                                                  ),
+                                                  fit: BoxFit.fill),
+                                              color: Colors.purple),
+                                          height: fontsize().iconsize,
+                                          width: fontsize().iconsize,
+                                        ),
                                       ),
                                       SizedBox(
                                         height: 5,
                                       ),
                                       Text(
-                                        "Rush Lyudo",
+                                        "Rush Ludo",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             color: Colors.white,
@@ -1707,7 +1796,7 @@ class _FirstScreenState extends State<FirstScreen> {
                       ],
                     ),
                   ),
-                ), //Sponcerd links
+                ),
               ],
             ),
           ),
@@ -1715,27 +1804,33 @@ class _FirstScreenState extends State<FirstScreen> {
             bottom: 20,
             right: 145,
             left: 145,
-            child: Container(
-              height: 40,
-              width: 55,
-              decoration: BoxDecoration(
-                  border: Border.all(width: 1.5, color: Colors.grey),
-                  color: colors().iconback,
-                  borderRadius: BorderRadius.circular(25)),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => QRcode()),
+                );
+              },
+              child: Container(
+                height: 40,
+                width: 55,
+                decoration: BoxDecoration(
+                    border: Border.all(width: 1.5, color: Colors.grey),
+                    color: colors().text,
+                    borderRadius: BorderRadius.circular(13)),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Center(
-                      child: Icon(
-                        Icons.qr_code_scanner_outlined,
-                        color: colors().icon,
-                      ),
-                    ),
+                    Icon(
+
+                      Icons.qr_code_scanner,
+                      color: colors().back,
+                        size: 30,
+                    ),SizedBox(width: 5,),
                     Text(
                       "Scan QR",
-                      style: TextStyle(color: colors().text),
+                      style: TextStyle(color: colors().back,fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),

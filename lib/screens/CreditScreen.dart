@@ -351,7 +351,7 @@ class _CreditScreenState extends State<CreditScreen> {
                       ],
                     ),
                   ),
-                ), //Credit profile
+                ), //Cre-dit profile
                 Padding(
                   padding: padding().contpading,
                   child: Container(

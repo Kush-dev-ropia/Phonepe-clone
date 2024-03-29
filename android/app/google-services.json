@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1029418051409",
+    "project_id": "phonepaychlone",
+    "storage_bucket": "phonepaychlone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029418051409:android:3c954ff2edc17eec459570",
+        "android_client_info": {
+          "package_name": "com.example.phonepaychlone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvIOCmMom6U4PHBK2oJvJg-4iN_YHmdwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

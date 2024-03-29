@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -162,11 +163,14 @@ class _UnsuranceState extends State<Unsurance> {
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(
                                         borderRadius:
-                                            BorderRadius.circular(10)),
+                                            BorderRadius.circular(10),
+                                    borderSide: BorderSide.none,
+                                    ),
                                     hintText:
-                                        "                         Eg. KA00XX0000",
+                                        "Eg. KA00XX0000",
                                     hintStyle: TextStyle(fontSize: 20),
                                   ),
+                                  textAlign: TextAlign.center,
                                 ),
                               ),
                             ),
